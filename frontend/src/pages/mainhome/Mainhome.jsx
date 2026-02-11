@@ -11,7 +11,7 @@ export default function Mainhome() {
             <a href="/login">Login</a>
           </button>     
 
-            <button>
+            <button className="bg-green font-3xl">
             <a href="/register">Register</a>
           </button>
         </div>  

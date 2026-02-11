@@ -73,13 +73,14 @@ export default function App() {
           <Route element={<BuyerLayout islogin={islogin} setIslogin={setIslogin} />}>
             <Route path="buyerhome" element={<BuyerHome islogin ={islogin}  setIslogin={setIslogin} />} />
           </Route>
+
+          {/* ==== */}
+          <Route path="*" element={<center><h1 style={{color: "red", fontSize: "3rem"}}>Error 404 <br />This Page is Not Found</h1></center>} />
         </Routes>
+
+        
       </BrowserRouter>
     </div>
   );
 }
 
-
-
-localStorage.setItem("islogin", "true");
-localStorage.setItem("role", "farmer");
