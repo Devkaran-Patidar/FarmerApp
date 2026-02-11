@@ -10,30 +10,36 @@ import BuyerLayout from "./layouts/BuyerLayout";
 import "./App.css";
 
 // pages login / register
-import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
 // farmer
 import FarmerHome from "./pages/Farmer/farmerHome";
-
+import AddProduct from "./pages/Farmer/AddProduct.jsx";
 
 // buyer
 import BuyerHome from "./pages/Buyer/BuyerHome";
 
+// mainhome
+import Mainhome from "./pages/mainhome/mainhome";
+import About from "./pages/mainhome/About";
+import Features from "./pages/mainhome/Features.jsx";
+import Product from "./pages/mainhome/Product.jsx";
+import Contact from "./pages/mainhome/Contact.jsx";
+
 
 export default function App() {
-  const [islogin, setIslogin] =useState(false);
+  // const [islogin, setIslogin] =useState(false);
 
-  useEffect(()=>{
-    if(localStorage.getItem("islogin")=== "true"){
-      setIslogin(true)
-    }
-  },[]);
+  // useEffect(()=>{
+  //   if(localStorage.getItem("islogin")=== "true"){
+  //     setIslogin(true)
+  //   }
+  // },[]);
 
-  //  const [islogin, setIslogin] = useState(
-  //   localStorage.getItem("islogin") === "true"
-  // );
+   const [islogin, setIslogin] = useState(
+    localStorage.getItem("islogin") === "true"
+  );
   return (
     <div className="main_app">
       <BrowserRouter>
@@ -41,16 +47,27 @@ export default function App() {
 
           {/* Main website */}
           <Route element={<MainLayout />}>
-            <Route path="" element={<Home />} />
+            <Route path="" element={<Mainhome />} />
+            <Route path="about" element={<About />} />
+            <Route path="features" element={<Features />} />
+            <Route path="product" element={<Product />} />
+            <Route path="contact" element={<Contact />} />
             
             <Route path="login" element={<Login  islogin ={islogin} setIslogin={setIslogin} />} />
             <Route path="register" element={<Register  islogin ={islogin}  setIslogin={setIslogin} />} />
           </Route>
 
           {/* farmer */}
-          <Route element={<FarmerLayout  islogin ={islogin}  setIslogin={setIslogin}/>}>
-            <Route path="farmerhome" element={<FarmerHome  islogin ={islogin}  setIslogin={setIslogin} />} />
-          </Route>
+          {/* <Route element={<FarmerLayout  islogin ={islogin}  setIslogin={setIslogin}/>}> */}
+
+              <Route path="farmerhome" element={<FarmerLayout  islogin ={islogin}  setIslogin={setIslogin} />} >
+                  <Route index element={<FarmerHome />} />
+                  <Route path="addproduct" element={<AddProduct />} />
+                  {/* <Route path="orders" element={<FarmerOrders />} />
+                  <Route path="profile" element={<FarmerProfile />} /> */}
+          
+              </Route>
+          {/* </Route> */}
 
           {/* buyer */}
           <Route element={<BuyerLayout islogin={islogin} setIslogin={setIslogin} />}>
@@ -61,3 +78,8 @@ export default function App() {
     </div>
   );
 }
+
+
+
+localStorage.setItem("islogin", "true");
+localStorage.setItem("role", "farmer");

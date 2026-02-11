@@ -9,6 +9,10 @@ export default function FarmerHome({islogin,setIslogin}){
     //         navigate("/")
     //     }
     // }, [islogin, navigate]);
+    
+    // console.log(islogin)
+    // console.log(localStorage.getItem("islogin"))
+
     return(
         <main>
             <h1>Farmer home</h1>

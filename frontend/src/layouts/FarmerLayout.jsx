@@ -5,7 +5,8 @@ import FarmerFooter from "../components/farmer/FarmerFooter";
 
 const FarmerLayout = ({islogin ,setIslogin}) => {
    const role = localStorage.getItem("role");
-
+   console.log("islogin:", islogin);
+  console.log("role:", role);
   if (!islogin || role !== "farmer") {
     return <Navigate to="/login" replace />;
   }
