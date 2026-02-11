@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header{
+
+    height: 10vh;
+    border: 1px solid black;
+    background-color: rgba(201, 199, 199, 0.384);
+    color: rgb(18, 18, 19);
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    
+    padding: 2rem;
+
+    font-size: 1.1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+
+/* nav bar */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* profile */
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile button {
+    background-color: blue;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
+
+
+/* main  */
+
+main{
+    min-height: 75vh;
+    border: 2px solid black;
+}
+
+
+
+/* footer */
+
+footer{
+    
+    height: 15vh;
+    border: 1px solid black;
+    background-color: rgba(201, 199, 199, 0.384);
+    color: rgb(18, 18, 19);
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    
+    padding: 2rem;
+
+    font-size: 1.1rem;
+}
+
+.appinfo{
+    /* border: 2px solid black; */
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+
+    
+}
+.appinfo a {
+    color: black;
+    text-decoration: none;
+}
+
+.policy{
+        width: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+
+}
+
+.policy a{
+    color: black;
+    text-decoration: none;
+}
+

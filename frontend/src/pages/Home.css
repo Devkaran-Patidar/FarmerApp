@@ -1,0 +1,59 @@
+/* main home page */
+.main_home_page{
+    /* border: 2px solid blue; */
+    /* width: 100vw; */
+    background-color: rgb(248, 249, 250);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 4rem 6rem;
+    border: 2px solid red;
+    width: 100%;
+    width: 80vw;
+    min-height: 85vh; 
+    /* scroll-margin-top: var(--header-height); */
+      scroll-margin-top: 15vh;
+      scroll-behavior: smooth;
+
+}
+
+/* home */
+.buttons{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.buttons button{
+    padding: 1.3rem 4rem;
+    background-color: rgba(0, 0, 255, 0.725);
+    border-radius: 30px;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.buttons button a{
+    color: black;
+    text-decoration: none;
+}
+
+/* features */
+
+
+
+/* contact */
+
+
+
+
+
+

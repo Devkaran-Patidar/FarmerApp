@@ -1,0 +1,86 @@
+
+
+header{
+
+    height: 15vh;
+    width: 100%;
+    /* border: 1px solid rgb(189, 35, 35); */
+    background-color:rgb(30, 47, 41);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+    padding: 2rem 5rem;
+    font-size: 1.3rem;
+
+    position: sticky;
+    top: 0;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     align-items: center;
+    gap: 1rem;
+
+    /* border: 1px solid rgba(129, 129, 132, 0.475); */
+
+    width: 14rem;
+
+    height: 8.5vh;
+
+    /* background-color: rgba(23, 23, 22, 0.997); */
+}
+
+/* #logo_name{
+    color: rgb(67, 252, 67);
+    font-size: 1.5rem;
+} */
+
+.logo img{
+    width: 80%;
+
+    /* border-radius: 15px; */
+}
+
+
+/* nav bar */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* profile */
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile button {
+    background-color: blue;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+}
