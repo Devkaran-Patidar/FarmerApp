@@ -1,10 +1,19 @@
+import React,{useEffect} from 'react'
 import './Login.css'
 import { Link } from 'react-router-dom'
 import Register from './Register'
 import { useNavigate } from 'react-router-dom'
 
 export default function Login({islogin,setIslogin}){
-  let navigate =useNavigate();
+  let navigate = useNavigate();
+
+  useEffect(() => {
+    setIslogin(JSON.parse(localStorage.getItem("islogin")))
+    if (JSON.parse(localStorage.getItem("islogin")) == true)
+    {
+      navigate("/")
+    }
+  },[])
 
   async function handlelogin(e) {
     e.preventDefault();

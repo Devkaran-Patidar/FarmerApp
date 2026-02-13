@@ -47,7 +47,7 @@ export default function App() {
 
           {/* Main website */}
           <Route element={<MainLayout />}>
-            <Route path="" element={<Mainhome />} />
+            <Route path="/" element={<Mainhome />} />
             <Route path="about" element={<About />} />
             <Route path="features" element={<Features />} />
             <Route path="product" element={<Product />} />

@@ -8,9 +8,9 @@ const BuyerLayout = ({islogin ,setIslogin}) => {
   const role = localStorage.getItem("role");
      let navigate = useNavigate();
   if (!islogin || role !== "buyer") {
-    // return <Navigate to="/login" replace />;
-      navigate("/")
+    return <Navigate to="/login" replace />;
   }
+
 
   // change Navigate function
   return (

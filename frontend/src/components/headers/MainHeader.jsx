@@ -15,10 +15,11 @@ export default function Header(){
             <a href="#features">Features</a>
             <a href="#Product">Product</a>
             <a href="#contact">Contact</a> */}
-            <Link to="/about">about</Link>
-            <Link to="/features">features</Link>
-            <Link to="/product">product</Link>
-            <Link to="/contact">contact</Link>   
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/features">Features</Link>
+            <Link to="/product">Product</Link>
+            <Link to="/contact">Contact</Link>   
         </nav> 
 
     </header>

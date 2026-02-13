@@ -12,7 +12,7 @@ export default function Register({islogin,setIslogin}){
     username: e.target.username.value,
     email : e.target.email.value,
     avtar :e.target.avtar.value,
-    number: e.target.number.value,
+    phone_number: e.target.number.value,
     password : e.target.password.value
    }
    console.log(data)
