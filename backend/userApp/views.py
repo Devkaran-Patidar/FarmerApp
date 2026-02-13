@@ -43,19 +43,16 @@ def login_view(request):
             "message": "Login successful",
                 "username": user.username,
                 "email": user.email,
-                "role": user.role
+                "role": user.role,
+                "id": user.id
             
         })
 
-# @api_view(['GET'])
-# def profile_view(request):
-#     user = request.user
-#     # myserializer = RegisterSerializer(user)
-#     if not user.is_authenticated:
-#         return Response({"error": "Authentication required"}, status=401)   
-
-#     return Response({
-#         "username": user.username,
-#         "email": user.email,
-#         "role": user.role
-#     })
+@api_view(['GET'])
+def profile_view(request,user_id):
+    try:
+        user = User.objects.get(id=user_id)
+        serializers = UserSerializer(user)
+        return Response(serializers.data)
+    except User.DoesNotExist:
+        return Response({"error": "User not found"}, status=404)

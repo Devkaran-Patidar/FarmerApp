@@ -1,5 +1,4 @@
 
-
 header{
 
     height: 15vh;
@@ -15,72 +14,49 @@ header{
 
     padding: 2rem 5rem;
     font-size: 1.3rem;
-
     position: sticky;
     top: 0;
-
 }
 
 .logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-     align-items: center;
+    align-items: center;
     gap: 1rem;
-
-    /* border: 1px solid rgba(129, 129, 132, 0.475); */
-
-    width: 14rem;
-
+    width: 15%;
     height: 8.5vh;
-
-    /* background-color: rgba(23, 23, 22, 0.997); */
-}
-
-/* #logo_name{
-    color: rgb(67, 252, 67);
-    font-size: 1.5rem;
-} */
+} 
 
 .logo img{
     width: 80%;
-
-    /* border-radius: 15px; */
+    box-shadow: 0px 0px 5px rgb(11, 173, 103);
+    border-radius: 10px;
 }
-
-
 /* nav bar */
-
 nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    gap: 1rem;
-    
+    gap: 1.3rem;
+    /* border: 1px solid gray; */
+    padding: 1rem ;  
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(14, 189, 78);
+    font-weight: bold;
+    /* padding: 5px 5px; */
+}
+
+nav a:hover{
+    color: blue;
+    scale: 1.2;
+    /* border: 1px solid gray; */
+
 }
 
 
-/* profile */
 
-.profile{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.profile button {
-    background-color: blue;
-    color: aliceblue;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-}

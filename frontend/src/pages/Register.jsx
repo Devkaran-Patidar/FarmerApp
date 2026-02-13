@@ -11,7 +11,7 @@ export default function Register({islogin,setIslogin}){
     role: e.target.role.value,
     username: e.target.username.value,
     email : e.target.email.value,
-    avtar :e.target.avtar.value,
+    avtar :e.target.avtar.files[0],
     phone_number: e.target.number.value,
     password : e.target.password.value
    }

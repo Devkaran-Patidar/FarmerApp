@@ -8,12 +8,17 @@ export default function Login({islogin,setIslogin}){
   let navigate = useNavigate();
 
   useEffect(() => {
-    setIslogin(JSON.parse(localStorage.getItem("islogin")))
-    if (JSON.parse(localStorage.getItem("islogin")) == true)
-    {
-      navigate("/")
+  if (islogin) {
+    const role = localStorage.getItem("role");
+
+    if (role === "farmer") {
+      navigate("/farmerhome");
+    } else if (role === "buyer") {
+      navigate("/buyerhome");
     }
-  },[])
+  }
+}, [islogin]);
+
 
   async function handlelogin(e) {
     e.preventDefault();
@@ -41,6 +46,7 @@ export default function Login({islogin,setIslogin}){
     setIslogin(true);
     localStorage.setItem("islogin", "true");
     localStorage.setItem("role", result.role);
+    localStorage.setItem("userId", result.id);
 
     // 🔀 Redirect by role
     if (result.role === "farmer") {
