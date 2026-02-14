@@ -69,9 +69,12 @@ export default function Register({islogin,setIslogin}){
           placeholder="Enter your photo"
           />
            <input
-           type="number" 
+           type="tel"
           name="number"
-          placeholder="Enter your number"
+          minLength={10}
+          maxLength={10}
+          pattern="[0-9]{10}"
+          placeholder="Enter your Phone No."
           />
           <input
             type="password"

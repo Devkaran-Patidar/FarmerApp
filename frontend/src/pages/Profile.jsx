@@ -28,7 +28,6 @@ export default function Profile() {
 
     fetchProfile();
   }, [userId]);
-
   return (
     <div>
       <h1>Profile</h1>
@@ -38,7 +37,8 @@ export default function Profile() {
           <p>Name: {profile.username}</p>
           <p>Email: {profile.email}</p>
           <p>phone number: {profile.phone_number}</p>
-          <p>avtar:{profile.avatar}</p>
+          {/* <p>avtar:{profile.avatar}</p> */}
+          <img src={profile.avatar} alt={`${profile.username} photo`}  />
         </div>
       ) : (
         <p>Loading...</p>

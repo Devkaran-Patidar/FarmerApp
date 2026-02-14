@@ -22,7 +22,7 @@ import AddProduct from "./pages/Farmer/AddProduct.jsx";
 import BuyerHome from "./pages/Buyer/BuyerHome";
 
 // mainhome
-import Mainhome from "./pages/mainhome/mainhome";
+import Mainhome from "./pages/mainhome/Mainhome";
 import About from "./pages/mainhome/About";
 import Features from "./pages/mainhome/Features.jsx";
 import Product from "./pages/mainhome/Product.jsx";
@@ -61,7 +61,7 @@ export default function App() {
 
           <Route path="farmerhome" element={<FarmerLayout islogin={islogin} setIslogin={setIslogin} />}>
             <Route index element={<FarmerHome />} />
-            <Route path="addproduct" element={<AddProduct />} />
+            {/* <Route path="addproduct" element={<AddProduct />} /> */}
             <Route path="profile" element={<Profile />} />
           </Route>
 

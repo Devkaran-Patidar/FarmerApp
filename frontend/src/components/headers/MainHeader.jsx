@@ -16,9 +16,9 @@ export default function Header(){
             <a href="#Product">Product</a>
             <a href="#contact">Contact</a> */}
             <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/features">Features</Link>
             <Link to="/product">Product</Link>
+            <Link to="/features">Features</Link>
+            <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>   
         </nav> 
 
