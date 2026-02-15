@@ -1,5 +1,5 @@
 
-header{
+.header-container {
 
     height: 15vh;
     width: 100%;
@@ -65,6 +65,7 @@ nav a:hover{
     /* border: 1px solid gray; */
 
 }
+
 
 
 
