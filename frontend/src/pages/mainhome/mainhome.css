@@ -1,8 +1,9 @@
 .mainhome-container{
     display: flex;
     flex-direction: column;
-    width: 99vw;
+    width: 100%;
     overflow: hidden;
+    
 }
 
 .mainhome-page{
@@ -10,16 +11,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(71, 230, 110, 0.596);
+    /* background-color: rgba(71, 230, 110, 0.596); */
     width: 100vw;
     overflow: hidden;
     min-height: 85vh;
 }
 
-h1{
-    font-size: 5rem;
-    text-align: center;
-}
 
 .buttons{
     display: flex;

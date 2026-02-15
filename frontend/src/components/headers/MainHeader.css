@@ -4,7 +4,7 @@ header{
     height: 15vh;
     width: 100%;
     /* border: 1px solid rgb(189, 35, 35); */
-    background-color:rgba(51, 51, 51, 0.837);
+    background-color:rgb(37, 78, 64);
     color: white;
 
     display: flex;
@@ -16,6 +16,9 @@ header{
     font-size: 1.3rem;
     position: sticky;
     top: 0;
+
+    overflow: 
+    hidden;
 }
 
 .logo {
@@ -24,15 +27,18 @@ header{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: 12rem;
-    height: 8.5vh;
+    width: 9rem;
+    height: 8vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(183, 189, 186);
+    overflow: hidden;
 } 
 
-.logo img{
-    width: 80%;
-    box-shadow: 0px 0px 5px rgb(11, 173, 103);
-    border-radius: 10px;
+.logo:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 2px rgb(73, 129, 233);
 }
+
 /* nav bar */
 nav{
     display: flex;
@@ -46,14 +52,15 @@ nav{
 
 nav a {
     text-decoration: none;
-    color: rgb(14, 189, 78);
+    color: rgb(236, 226, 226);
     font-weight: bold;
+    font-size: 1.3rem;
     /* padding: 5px 5px; */
     /* text-decoration-color:rgba(204, 179, 179, 0.503); */
 }
 
 nav a:hover{
-    color: blue;
+    color: rgb(31, 201, 45);
     scale: 1.2;
     /* border: 1px solid gray; */
 

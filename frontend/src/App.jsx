@@ -15,7 +15,7 @@ import Register from "./pages/Register";
 import Profile from "./pages/profile.jsx";
 
 // farmer
-import FarmerHome from "./pages/Farmer/farmerHome";
+import FarmerHome from "./pages/Farmer/farmerHome.jsx";
 import AddProduct from "./pages/Farmer/AddProduct.jsx";
 
 // buyer

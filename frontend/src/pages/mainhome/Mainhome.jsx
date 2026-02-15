@@ -7,8 +7,8 @@ import "./mainhome.css"
 export default function Mainhome() {
   return (
     <div className="mainhome-container">
-      <div className="border-2 bg-emerald-600 h-screen ">
-          <h1 className="text-4xl font-bold border-2 border-green-600 ">
+      <div className=" mainhome-hero">
+          <h1 className="mainhome-heading">
           Fresh Farm <br />
           Product Delivered <br />
            to Your Home

@@ -12,9 +12,9 @@ export default function FarmerHeader({islogin,setIslogin}){
             color:"white",
             position:"sticky",
             top:0,
-            zIndex:100,
+            zIndex:10,
             width:"100w",
-            height: "15vh",
+            height: "10vh",
         }}>
             <h1>Farmer</h1>
             <Link to="/farmerhome/addproduct">add product</Link>

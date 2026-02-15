@@ -2,13 +2,23 @@
 .main_app{
   /* border: 2px solid rgb(189, 16, 134); */
   color: black;
-  background-color: white;
+  background-color: rgb(142, 247, 153);
+  /* background: linear-gradient( rgb(228, 240, 143),rgb(110, 249, 157)); */
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: start;
+  align-items: center;
+  /* gap: 4rem; */
+  min-height: 100vh;
+  max-width: 100vw;
 
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
 
 
 

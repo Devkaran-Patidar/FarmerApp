@@ -30,7 +30,7 @@ export default function Profile() {
   }, [userId]);
   return (
     <div>
-      <h1>Profile</h1>
+      <p >Profile</p>
       {profile ? (
         <div>
           <p>Role: {profile.role}</p>
