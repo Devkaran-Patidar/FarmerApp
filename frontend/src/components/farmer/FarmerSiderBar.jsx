@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-
+import "./FarmerSiderBar.css";
 
 export default function FarmerSiderBar() {
      const [profile, setProfile] = useState(null);

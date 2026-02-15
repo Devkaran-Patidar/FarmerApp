@@ -9,7 +9,7 @@ export default function Contact() {
 
         {/* Left Info Section */}
         <div className  ="contact-info">
-            <h1>Contact FarmDirect</h1>
+            <h1>Contact AgroMart</h1>
             <p>
                 Have questions about direct market access?  
                 We are here to support farmers and buyers.
@@ -24,10 +24,10 @@ export default function Contact() {
             </div>
 
             <div className="info-box">
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
                 <div>
                     <h4>Email Us</h4>
-                    <p>support@farmdirect.com</p>
+                    <p>support@agromart.com</p>
                 </div>
             </div>
 
@@ -35,13 +35,13 @@ export default function Contact() {
                 <i className="fas fa-phone"></i>
                 <div>
                     <h4>Call Us</h4>
-                    <p>+91 98765 43210</p>
+                    <p>+91 99911 4410</p>
                 </div>
             </div>
         </div>
 
         {/* <!-- Right Form Section --> */}
-        <div class="contact-form">
+        <div className="contact-form">
             <h2>Send Message</h2>
 
             <form>

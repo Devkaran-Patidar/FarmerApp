@@ -1,11 +1,41 @@
+.about-section {
+  padding: 4rem 1.5rem;
+  /* background-color: #ffffff; */
+      background: linear-gradient(rgb(164, 229, 244), #ddf7a5, #4cac4c);
 
-.about-page{
-    display: flex;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-container p {
+  color: #475569;
+  margin-bottom: 3rem;
+}
+
+.about-stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.about-stats h3 {
+  font-size: 2rem;
+  color: #22c55e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-stats {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 85vh;
-    background-color: #f5f5f5;
-     width: 100vw;
-    overflow: hidden;
+    gap: 1.5rem;
+  }
 }

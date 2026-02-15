@@ -56,8 +56,10 @@ export default function Login({islogin,setIslogin}){
     }
   }
     return(
-    <div className="login_page w-sm">
-        <h1 className='text-green-500 font-bold text-xl'>Login</h1>
+      <section className='login-section'>
+        
+    <div className="login_page">
+        <h1 className='text'>Login</h1>
 
         <form id="login" onSubmit={handlelogin} >
 
@@ -80,8 +82,9 @@ export default function Login({islogin,setIslogin}){
 
           <button type="submit">Submit</button>
 
-          <p>Don't have an Account?<Link to="/register" className='text-blue-700 text-lg font-bold' >sign up</Link></p>
+          <p>Don't have an Account?<Link to="/register" className='text1' >sign up</Link></p>
         </form>
       </div>
+      </section>
     )
 }

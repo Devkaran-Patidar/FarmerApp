@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo from "../../assets/logoname.webp";
+import logo from "../../assets/logoName.webp";
 export default function Footer() {
   return (
     <>

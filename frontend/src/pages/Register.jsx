@@ -38,9 +38,11 @@ export default function Register({islogin,setIslogin}){
   }
 
     return(
+      <section className="signup-section">
+        
        <div className="sign_up" >
         
-        <h1 className='text-green-500 font-bold text-xl'>Register</h1>
+        <h1 className='text'>Register</h1>
 
         <form id="signup" onSubmit={handlesignup} >
           <select name="role" required>
@@ -88,8 +90,9 @@ export default function Register({islogin,setIslogin}){
 
           <button type="submit">Submit</button>
 
-          <p>Do have an Account?<Link to="/login"  className='text-blue-700 text-lg font-bold'>login</Link></p>
+          <p>Do have an Account?<Link to="/login"  className='text1'>login</Link></p>
         </form>
       </div>
+      </section>
     )
 }

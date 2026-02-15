@@ -1,19 +1,21 @@
-
-import "./MainHeader.css"
-import logo from '../../assets/logoName.webp'
+import "./MainHeader.css";
+import logo from "../../assets/logoName.webp";
 import { Link } from "react-router-dom";
-export default function Header(){
-    return(
-        <header>
-            
-        <div className="header-container">
+export default function Header() {
+  return (
+    <header className="header">
+      <div className="header-container">
         <div className="logo">
-        <Link to="/"><img src={logo} alt="logo" /></Link>    
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
 
         <div className="navbar">
-            <div className="baricon"> <i className="fa-solid fa-bars"></i></div>
-            <nav>
+          <div className="baricon">
+            <i className="fa-solid fa-bars"></i>
+          </div>
+          <nav>
             {/* <a href="#About">About</a>
             <a href="#features">Features</a>
             <a href="#Product">Product</a>
@@ -22,11 +24,10 @@ export default function Header(){
             <Link to="/product">Product</Link>
             <Link to="/features">Features</Link>
             <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>   
-        </nav> 
+            <Link to="/contact">Contact</Link>
+          </nav>
         </div>
-
-    </div>
-        </header>
-    )
+      </div>
+    </header>
+  );
 }

@@ -1,38 +1,31 @@
-
-.sign_up{
-    /* border: 2px solid rgb(212, 43, 43); */
+.signup-section{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    /* width: 100%; */
+    min-height: 90vh;
+    background: linear-gradient(rgb(164, 229, 244), #ddf7a5, #4cac4c);
 
-    padding: 20px;
-    margin: 2rem;
-    /* min-height: 85vh; */
-
-    /* padding: 2rem 4rem; */
-
-    background-color: white;
-    color:black;
-   border-radius: 12px;
-
-   box-shadow: 0px 0px 3px rgb(52, 13, 211) ;
-
-    /* padding-top: 0.2rem; */
 }
 
-
-
+.sign_up{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    color:black;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    box-shadow:5px 5px 10px rgb(88, 84, 84);
+}
 
 #signup{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-
+    gap: 1rem;
     text-decoration: none;
     border-radius: 1rem;
     cursor: pointer;
@@ -44,34 +37,27 @@
     font-size: medium;
     text-decoration: none;
     border: none;
-    box-shadow: 0px 0px 3px rgb(49, 49, 49);
+    box-shadow: 0px 0px 3px rgb(30, 29, 29);
 }
-
 
 #signup button{
      
-    /* margin-left:2rem ; */
     width: 70%;
-    background-color: blue;
-    color: aliceblue;
-
-    padding: 10px 20px;
+    background-color: rgb(4, 203, 34);
+    color: white;
+    padding: 10px 0px;
     border-radius: 20px;
     border: none;
 }
-
-#signup input[type="number"]::-webkit-inner-spin-button,
-#signup input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+#signup button:hover{
+    background-color: rgb(28, 78, 188);
 }
 
-/* Make file & number inputs behave like normal inputs */
 #signup input[type="file"] {
     /* padding: 10px 20px; */
     /* border-radius: 10px; */
     /* font-size: medium; */
     border: none;
-    /* box-shadow: 0px 0px 5px white; */
     background-color: transparent;
     width: 70%;
     color: black;

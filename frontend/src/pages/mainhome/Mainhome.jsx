@@ -8,15 +8,19 @@ export default function Mainhome() {
   return (
     <div className="mainhome-container">
       <div className=" mainhome-hero">
-          <h1 className="mainhome-heading">
+        <div className="hero-content">
+            <h1 className="mainhome-heading">
           Fresh Farm <br />
           Product Delivered <br />
            to Your Home
-        </h1>
+        </h1> 
+        </div>
+        
         <div className="buttons">
-            <button>  <a href="/login">Login</a>  </button>     
-            <button>  <a href="/register">Register</a> </button>
+              <button className="btn"><a href="/login">Login Here !</a></button>      
+             <button className="btn"> <a href="/register">Register Now !</a></button>
         </div> 
+       
       </div>
     
       <div className="allpages">
