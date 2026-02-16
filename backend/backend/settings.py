@@ -30,7 +30,8 @@ INSTALLED_APPS = [
      "corsheaders",
      "rest_framework",
      "userApp",
-    
+     "contactApp",
+    "farmerApp",
 ]
 
 MIDDLEWARE = [
