@@ -1,1 +1,26 @@
 
+
+.farmer-home-section{
+    
+    background: linear-gradient(rgb(164, 229, 244), #ddf7a5, #4cac4c);
+    /* background-color: blueviolet; */
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+}
+
+
+.farmer-home{
+    width: 80vw;
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}

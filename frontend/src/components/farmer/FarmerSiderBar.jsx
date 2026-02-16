@@ -30,45 +30,29 @@ export default function FarmerSiderBar() {
         fetchProfile();
       }, [userId]);
   return (
-    <div
-      style={{
-        width: "220px",
-        background: "yellowgreen",
-        color: "white",
-        minHeight: "100vh",
-        padding: "20px",
-        position: "fixed",
-        top: "10vh",
-        left: 0,
-        zIndex: 100,
-        maxHeight: "85vh",
-        border: "1px solid gray",
-        overflow:"hidden",
-      }}
-    >
+    <div className="farmer-sidebar">
 
-      <h2 className="text-2xl">Farmer Panel</h2>
-
-      <div>
+        <div className="side-profile">
             <h2 className="text-xs">Profile</h2>
             {profile ? (
-          <div>
+          <div className="profile-data">
+            <img className="profile-img" src={profile.avatar} alt={`${profile.username} photo`} />
             <p>Role: {profile.role}</p>
             <p>Name: {profile.username}</p>
             <p>Email: {profile.email}</p>
             <p>phone number: {profile.phone_number}</p>
             {/* <p>avtar:{profile.avatar}</p> */}
-            <img src={profile.avatar} alt={`${profile.username} photo`} />
           </div>
             ) : (
           <p>Loading...</p>
             )}
-      </div>
+        </div>
 
-      <Link to="profile">Profile</Link>
-      <Link to="dashboard" style={{ display: "block", color: "white" }}>
-        Dashboard
-      </Link>
+        <div  className="side-navbar">
+            <Link to="profile">Profile</Link>
+            <Link to="dashboard">Dashboard</Link>
+
+        </div>
     </div>
   );
 }

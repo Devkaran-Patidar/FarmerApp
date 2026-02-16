@@ -10,6 +10,9 @@ export default function Mainhome() {
       <div className=" mainhome-hero">
         <div className="hero-content">
             <h1 className="mainhome-heading">
+              {/* Buy 🛒 & Sell🧑‍🌾
+              orgainc Products.
+              <br /> */}
           Fresh Farm <br />
           Product Delivered <br />
            to Your Home

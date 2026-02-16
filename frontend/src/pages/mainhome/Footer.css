@@ -1,6 +1,7 @@
 
 
 .footer {
+    min-height: 90vh;
     background-color: #0f172a;
     color: #cbd5e1;
     padding: 60px 8%;

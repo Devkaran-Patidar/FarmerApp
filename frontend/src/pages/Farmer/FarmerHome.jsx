@@ -3,13 +3,13 @@ import './FarmerHome.css'
 export default function FarmerHome(){
 
     return(
-        <main>
+        <section className='farmer-home-section'>
 
-           <div>
+           <div className='farmer-home'>
                 <h1>Farmer home</h1>
 
            </div>
 
-        </main>
+        </section>
     )
 }
