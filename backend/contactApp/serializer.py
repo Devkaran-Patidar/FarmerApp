@@ -1,7 +1,5 @@
 from rest_framework.serializers import ModelSerializer
 from rest_framework import serializers
-# from userApp.models import User
-
 from .models import contactModel
 
 class contactSerializer(serializers.ModelSerializer):

@@ -29,7 +29,7 @@ export default function Login({islogin,setIslogin}){
 
  
     // 🔥 Call Django login API
-    const res = await fetch("http://localhost:8000/api/login/", {
+    const res = await fetch("http://localhost:8000/api/user/login/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

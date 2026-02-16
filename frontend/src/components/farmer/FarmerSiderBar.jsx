@@ -12,7 +12,7 @@ export default function FarmerSiderBar() {
         const fetchProfile = async () => {
           try {
             const res = await fetch(
-              `http://localhost:8000/api/profile/${userId}/`,
+              `http://localhost:8000/api/user/profile/${userId}/`,
               {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
@@ -36,7 +36,7 @@ export default function FarmerSiderBar() {
             <h2 className="text-xs">Profile</h2>
             {profile ? (
           <div className="profile-data">
-            <img className="profile-img" src={profile.avatar} alt={`${profile.username} photo`} />
+            <img className="profile-img" src={profile.avtar} alt={`${profile.username} photo`} />
             <p>Role: {profile.role}</p>
             <p>Name: {profile.username}</p>
             <p>Email: {profile.email}</p>

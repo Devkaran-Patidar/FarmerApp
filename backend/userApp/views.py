@@ -14,7 +14,7 @@ def register_view(request):
 
     if myserializer.is_valid():
         myserializer.save()
-        return Response(myserializer.data)
+        return Response(UserSerializer(myserializer.instance,  context ={'request':request}).data)
     return Response(myserializer.errors)
 
 
@@ -52,7 +52,7 @@ def login_view(request):
 def profile_view(request,user_id):
     try:
         user = User.objects.get(id=user_id)
-        serializers = UserSerializer(user)
+        serializers = UserSerializer(user ,context={'request':request})
         return Response(serializers.data)
     except User.DoesNotExist:
         return Response({"error": "User not found"}, status=404)

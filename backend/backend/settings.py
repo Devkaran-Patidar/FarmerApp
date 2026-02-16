@@ -44,7 +44,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-# ======================
+# =====================================================================================
 
 CORS_ORIGIN_ALLOW_ALL = True
 AUTH_USER_MODEL = 'userApp.User'
@@ -53,7 +53,13 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
-# ===============
+
+
+import os
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# ======================================================================================
 
 ROOT_URLCONF = 'backend.urls'
 
