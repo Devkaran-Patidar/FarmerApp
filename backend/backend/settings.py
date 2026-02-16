@@ -30,8 +30,7 @@ INSTALLED_APPS = [
      "corsheaders",
      "rest_framework",
      "userApp",
-     "contactApp",
-    "farmerApp",
+    
 ]
 
 MIDDLEWARE = [
@@ -44,7 +43,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-# =====================================================================================
+# ======================
 
 CORS_ORIGIN_ALLOW_ALL = True
 AUTH_USER_MODEL = 'userApp.User'
@@ -53,13 +52,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
 }
-
-
-import os
-MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-
-# ======================================================================================
+# ===============
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -84,24 +77,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'farmerapp',
-        'USER': 'root',
-        'PASSWORD': 'student@dev2',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 
 # Password validation
