@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react'
 import './Login.css'
 import { Link } from 'react-router-dom'
-import Register from './Register'
 import { useNavigate } from 'react-router-dom'
 
 export default function Login({islogin,setIslogin}){

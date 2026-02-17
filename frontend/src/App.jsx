@@ -52,26 +52,26 @@ export default function App() {
             <Route path="features" element={<Features />} />
             <Route path="product" element={<Product />} />
             <Route path="contact" element={<Contact />} />
-
-            <Route  path="login"  element={<Login islogin={islogin} setIslogin={setIslogin} />} />
-            <Route path="register"  element={<Register islogin={islogin} setIslogin={setIslogin} />} />
-          </Route>
+ 
+             {/* <Route  path="login"  element={<Login islogin={islogin} setIslogin={setIslogin} />} />
+            <Route path="register"  element={<Register islogin={islogin} setIslogin={setIslogin} />} /> */}
+          </Route> 
 
                           {/* farmer */}
 
-          <Route path="farmerhome" element={<FarmerLayout islogin={islogin} setIslogin={setIslogin} />}>
-            <Route index element={<FarmerHome />} />
+          {/* <Route path="farmerhome" element={<FarmerLayout islogin={islogin} setIslogin={setIslogin} />}>
+            <Route index element={<FarmerHome />} /> */}
             {/* <Route path="addproduct" element={<AddProduct />} /> */}
-            <Route path="profile" element={<Profile />} />
-          </Route>
+            {/* <Route path="profile" element={<Profile />} />
+          </Route> */}
 
 
                         {/* buyer */}
-
+{/* 
           <Route path="buyerhome" element={<BuyerLayout islogin={islogin} setIslogin={setIslogin} />}>
             <Route index element={<BuyerHome />}/>
             <Route path="profile" element={<Profile />} />
-          </Route>
+          </Route> */}
 
 
           <Route path="*" element={<center><h1 style={{ color: "red", fontSize: "3rem" }}>Error 404 <br />This Page is Not Found</h1></center> } /></Routes>
